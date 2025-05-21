@@ -1,0 +1,32 @@
+{
+  "name": "thinkawitch/tag-bundle",
+  "type": "symfony-bundle",
+  "description": "Tags for Symfony",
+  "keywords": [
+    "symfony",
+    "entity",
+    "form",
+    "tag"
+  ],
+  "homepage": "https://github.com/thinkawitch/tag-bundle",
+  "license": "unlicense",
+  "authors": [
+    {
+      "name": "Andrew Sinkevitch",
+      "email": "andrew.sinkevitch@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Thinkawitch\\TagBundle\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.1",
+    "doctrine/doctrine-bundle": "^2.11",
+    "doctrine/orm": "^2.17",
+    "symfony/ux-autocomplete": "^2.14"
+  }
+}

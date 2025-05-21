@@ -1,0 +1,16 @@
+services:
+  thinkawitch.tag_bundle.tags_type:
+    class: Thinkawitch\TagBundle\Form\Type\TagsType
+    arguments: ['@doctrine.orm.entity_manager', '@router']
+    tags: ['form.type']
+
+  Thinkawitch\TagBundle\Repository\TagRepository:
+#  thinkawitch.tag_bundle.tag_repository: # not work !?
+    class: Thinkawitch\TagBundle\Repository\TagRepository
+    arguments: ['@doctrine']
+    tags: ['doctrine.repository_service']
+
+  Thinkawitch\TagBundle\Controller\TagController:
+    class: Thinkawitch\TagBundle\Controller\TagController
+    autowire: true
+    autoconfigure: true

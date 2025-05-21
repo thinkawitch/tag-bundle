@@ -1,0 +1,4 @@
+# config/routes/thinkawitch_tag.yaml
+thinkawitch_tag:
+  resource: '@ThinkawitchTagBundle/config/routes.yaml'
+  prefix: /thinkawitch-tag
